@@ -21,7 +21,7 @@ It includes the **Presentation Layer (Web Tier)**, **Application Layer**, and **
 - Create a **VPC** with CIDR block (e.g., `10.0.0.0/16`).
 - Enable **DNS hostname and DNS resolution**.
 
-<img src="images/vpc-create.png" alt="Step 1 - Create VPC" width="400"/>
+![Step 1 - Create VPC](images/vpc-create.png)
 
 ### 2️⃣ Create Subnets
 
@@ -29,7 +29,7 @@ It includes the **Presentation Layer (Web Tier)**, **Application Layer**, and **
 - **2 Private Subnets** (for `app-server` and `db-server`).
 - Place subnets across **multiple Availability Zones (AZs)** for high availability.
 
-<img src="images/subnet-create.png" alt="Step 2 - Create Subnets" width="400"/>
+![Step 2 - Create Subnets](images/subnet-create.png)
 
 ### 3️⃣ Configure Networking Components
 
@@ -39,10 +39,10 @@ It includes the **Presentation Layer (Web Tier)**, **Application Layer**, and **
   - Public Route Table → Route `0.0.0.0/0` to IGW.
   - Private Route Table → Route `0.0.0.0/0` to NAT Gateway.
 
-<img src="images/igw-attach.png" alt="Attach IGW" width="400"/>
-<img src="images/nat-create.png" alt="Create NAT Gateway" width="400"/>
-<img src="images/igw-to-public.png" alt="Public Route Table" width="400"/>
-<img src="images/nat-to-private.png" alt="Private Route Table" width="400"/>
+![Attach IGW](images/igw-attach.png)
+![Create NAT Gateway](images/nat-create.png)
+![Public Route Table](images/igw-to-public.png)
+![Private Route Table](images/nat-to-private.png)
 
 ### 4️⃣ Configure Security Groups & NACLs
 
@@ -50,7 +50,7 @@ It includes the **Presentation Layer (Web Tier)**, **Application Layer**, and **
 - **App SG**: Allow traffic only from Node SG.
 - **DB SG**: Allow database port (e.g., 3306 for MySQL, 5432 for PostgreSQL) only from App SG.
 
-<img src="images/sg.png" alt="Security Groups" width="400"/>
+![Security Groups](images/sg.png)
 
 ### 5️⃣ Launch EC2 Instances
 
@@ -60,14 +60,14 @@ It includes the **Presentation Layer (Web Tier)**, **Application Layer**, and **
 - Attach appropriate **Security Groups**.
 - Install required software (Node.js, backend application, database, etc.).
 
-<img src="images/launch-instance.png" alt="Launch EC2 Instances" width="400"/>
+![Launch EC2 Instances](images/launch-instance.png)
 
 ### 6️⃣ (Optional) Configure Load Balancer & Auto Scaling
 
 - If needed, create an **Application Load Balancer (ALB)** in the Public Subnet and register the `node-instance`.
 - Configure **Auto Scaling Group (ASG)** for the Web/App EC2 instances.
 
-<img src="images/lb.png" alt="Load Balancer" width="400"/>
+![Load Balancer](images/create-lb.png)
 
 ### 7️⃣ Test the Setup
 
@@ -99,7 +99,7 @@ This architecture is commonly used in **production-grade web applications** to e
 
 ## 📸 Architecture Diagram
 
-<img src="images/3-tier-image.png" alt="Three Tier Architecture Diagram" width="600"/>
+![Three Tier Architecture Diagram](images/3-tier-image.png)
 
 ---
 

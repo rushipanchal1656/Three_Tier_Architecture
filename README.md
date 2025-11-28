@@ -1,4 +1,4 @@
-# 3-Tier Architecture on AWS
+# Automated  3-Tier Cloud Infrastructure on AWS
 
 This project demonstrates the deployment of a **3-Tier Web Application Architecture** on **Amazon Web Services (AWS)**.  
 It includes the **Presentation Layer (Web Tier)**, **Application Layer**, and **Database Layer**, hosted in a custom **VPC** with secure networking, auto-scaling, and load balancing.

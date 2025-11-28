@@ -99,7 +99,7 @@ This architecture is commonly used in **production-grade web applications** to e
 
 ## 📸 Architecture Diagram
 
-<img src="images/3-tier-image.webp" alt="Three Tier Architecture Diagram" width="600"/>
+<img src="images/3-tier-image.png" alt="Three Tier Architecture Diagram" width="600"/>
 
 ---
 

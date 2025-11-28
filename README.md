@@ -41,8 +41,8 @@ It includes the **Presentation Layer (Web Tier)**, **Application Layer**, and **
 
 ![Attach IGW](images/igw-attach.png)
 ![Create NAT Gateway](images/nat-create.png)
-![Public Route Table](images/igw-to-public.png)
-![Private Route Table](images/nat-to-private.png)
+![Public Route Table](images/pub-rt-create.png)
+![Private Route Table](images/pvt-rt-create.png)
 
 ### 4️⃣ Configure Security Groups & NACLs
 
@@ -74,6 +74,16 @@ It includes the **Presentation Layer (Web Tier)**, **Application Layer**, and **
 - Access the application using the **public IP or DNS** of the `node-instance` (or ALB if used).
 - Verify traffic flow:
   - User → Node Instance (Web Tier, Public) → App Server (Private) → DB Server (Private).
+
+### 8️⃣ Project Output
+
+- application running on the `node-instance` should be accessible via the public IP or DNS name.
+
+- Access the web application (replace with your node-instance public IP or ALB DNS):
+  - [Open Web Application](http://NODE_INSTANCE_PUBLIC_IP_OR_DNS)
+
+![Project Output](images/about.png)
+![Project Output](images/index.png)
 
 ---
 
